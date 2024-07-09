@@ -14,7 +14,7 @@ body{
     width: 1200px;
     height: 700px;
     margin: 0 auto;
-    background-color: aqua;
+    background-color: rgb(202, 202, 202);
     position: relative;
 }
 
@@ -22,7 +22,7 @@ body{
 /* header 영역 */
 #header{
     height: 100px;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
 .logo{
@@ -208,12 +208,86 @@ body{
 /* footer 영역 */
 #footer{
     height: 100px;
-    background-color: slateblue;
+    /* background-color: slateblue; */
 }
 
+.f_left{
+    width: 1000px;
+    height: 100px;
+    float: left;
+}
 
+.f_left > div{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
 
+.f_menu{
+    border-bottom: 1px solid black;
+}
 
+.f_menu a{
+
+}
+
+.f_menu a::after{
+    content: "|";
+    padding: 0 10px;
+}
+
+.f_menu a:last-child::after{
+    display: none;
+}
+
+.f_Copy{}
+
+.family{
+    width: 200px;
+    height: 100px;
+    float: right;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.family select{
+    width: 150px;
+    height: 50px;
+}
+
+/* popup 영역 */
+.popup{
+    width: 300px;
+    height: 500px;
+    background-color: white;
+    border: 5px solid black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    display: none;
+}
+
+.popup h3{
+    border-bottom:5px groove gray ;
+    font-size: 30px;
+    
+}
+
+.popup p{
+    padding-top: 20px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.close{
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
 
 
 

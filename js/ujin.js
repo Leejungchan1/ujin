@@ -29,6 +29,16 @@ $(function(){
         console.log(n);
     },2000)
 
+    //팝업
+    $(".p_up").click(function(){
+        $(".popup").show();
+
+    })
+
+    $(".close").click(function(){
+        $(".popup").hide();
+    })
+
 
 
 
